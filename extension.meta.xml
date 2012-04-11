@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension id="publishfiltering">
+<extension id="page_headers">
 	<name>Page Headers</name>
 	<description>Customise HTTP headers by standard page output.</description>
 	<repo type="github">https://github.com/henrysingleton/page_headers</repo>
