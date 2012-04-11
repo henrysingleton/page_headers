@@ -46,10 +46,6 @@ Create a new page, give it a page type of 'headers' and save the following as th
 	
 	</xsl:stylesheet>
 
-## TODO
-
-Would be nice if extension could parse page output, looking for a <headers/> element or similar, and using that for request headers instead. This would allow the user to define custom content for both the response headers and response body. 
-
 ## Changelog
 
 - **1.0** Initial release for internal project.
