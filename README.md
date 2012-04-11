@@ -20,12 +20,11 @@ Great for generating redirect urls for 301/302 redirects if you need information
 ## Usage
 
 - Create a new page, and give it a page type of 'headers'.
-- Make the page output plain text that you want for your headers. If you also want to output actual page content in the message body, simply follow  
+- Make the page output plain text that you want for your headers. If you also want to output actual page content in the message body, simply separate your headers by a blank newline (as per the HTTP spec for separating message headers/body).
 
 ## Notes
 
-If html is detected during output, headers will not be generated as they would likely be invalid. 
-Note that the actual page content is not output, as the script is killed as soon as all the output lines have been sent as headers. 
+If HTML/XML is detected at the start of the page output, the extension will not do anything, even if the 'headers' page type is set.
 
 ## Example
 
@@ -40,8 +39,8 @@ Create a new page, give it a page type of 'headers' and save the following as th
 		indent="yes" />
 	
 	<xsl:template match="/">
-	HTTP/1.1 301 Moved Permanently
-	Location: http://www.google.com/
+		HTTP/1.1 301 Moved Permanently
+		Location: http://www.google.com/
 	</xsl:template>
 	
 	</xsl:stylesheet>
