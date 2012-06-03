@@ -1,15 +1,15 @@
 # Custom Page Headers Symphony Extension
 
-- Version: 1.0
+- Version: 1.1
 - Author: Henry Singleton
 - Build Date: 11 Apr 2012
-- Requirements: Symphony 2.2.x
+- Requirements: Symphony 2.2.5 - Symphony 2.3.x
 
 ## Overview
 
 This Symphony CMS extension allows you to define headers by page output. This lets you build headers using data from datasources or other page information. Anything that's accessible from a standard page really!
 
-Great for generating redirect urls for 301/302 redirects if you need information from existing symphony entries, or want to store redirect stats via an event etc. 
+Great for generating redirect urls for 301/302 redirects if you need information from existing Symphony entries, or want to store redirect stats via an event etc. 
 
 ## Installation
 
@@ -48,3 +48,4 @@ Create a new page, give it a page type of 'headers' and save the following as th
 ## Changelog
 
 - **1.0** Initial release for internal project.
+- **1.1** Updated extension.meta.xml to include namespace for Symphony 2.3 compatibility. (Thanks to andrewminton)
