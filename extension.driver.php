@@ -7,8 +7,8 @@
 		public function about() {
 			return array(
 				'name'			=> 'Page Headers',
-				'version'		=> '1.1',
-				'release-date'	=> '2012-06-04',
+				'version'		=> '1.2',
+				'release-date'	=> '2012-06-06',
 				'author'		=> array(
 					'name'			=> 'Henry Singleton',
 					'website'		=> 'http://henrysingleton.com'
