@@ -2,7 +2,7 @@
 
 - Version: 1.2
 - Author: Henry Singleton
-- Build Date: 11 Apr 2012
+- Build Date: 06 06 2012
 - Requirements: Symphony 2.2.x - Symphony 2.3.x
 
 ## Overview
