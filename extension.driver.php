@@ -55,13 +55,18 @@
 			//If this page has 'headers' set as a page type, process the content.
 			if ($this->headersTrigger === true) {
 				$content = $page['output'];
-								
+						
 				if (
+					
+					//If the content is false that means there is likely a symphony error being shown. If so, don't do anything. 
+					$content !== false &&
+					
 					//Just check that the page content doesn't start with an angle bracket, as that would mean XML/HTML was probably being output and not the sweet juicy headers we crave.
 					strpos($content, '<') !== 0 && 
 					
 					//Check we haven't already sent the headers, to avoid nasty PHP error.
 					!headers_sent()
+					
 				) {	
 					//split response by two consecutive newlines (as per http sepc)
 					$parts = explode("\n\n", $content);
